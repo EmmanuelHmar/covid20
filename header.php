@@ -12,10 +12,10 @@
   <title>Blog Template for Bootstrap</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
   <!-- Custom styles for this template -->
-  <link href="<?php echo get_template_directory_uri() ?>/blog.css" rel="stylesheet">
+  <!-- <link href="<?php echo get_template_directory_uri() ?>/blog.css" rel="stylesheet"> -->
 
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

@@ -74,4 +74,23 @@ add_action('admin_init', 'custom_settings_page_setup');
 
 add_theme_support('post-thumbnails');
 
+// Custom Post Types
+function create_my_custom_post(){
+    register_post_type('my-custom-post', 
+    array(
+        'labels' => array(
+            'name' => __('My Custom Post'),
+            'singular_name' => __('My Custom Post'),
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'thumbnail',
+            'custom-fields'
+               )
+        ));
+}
+add_action('init','create_my_custom_post');
 

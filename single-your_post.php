@@ -19,6 +19,41 @@
         <h1>Title</h1>
         <?php the_title(); ?>
 
+        <h2>Text Input</h2>
+        <?php echo $meta['text']; ?>
+
+        <h2>Textarea</h2>
+        <?php echo $meta['textarea']; ?>
+
+        <h2>Checkbox</h2>
+        <?php if ($meta['checkbox'] === 'checkbox'){?>
+        Checkbox is checked <?php
+        } else { ?>
+        Checkbox is UNchecked
+            <?php 
+        } ?>
+
+        <h2>Select</h2>
+        <p>the actual select value selected</p>
+        <?php 
+        switch ($meta['select']) {
+            case 'option-one':
+            echo 'Option One';
+            break;
+            case 'option-two':
+            echo 'Option Two';
+            break;
+            default:
+            echo 'no option selected';
+            break;
+        }
+        ?>
+
+        <h2>The Image</h2>
+        <img src="<?php echo $meta['image']; ?>">
+
+
+
         <h1>The Content</h1>
         <?php the_content(); ?>
 
